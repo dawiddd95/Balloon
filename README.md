@@ -1,6 +1,6 @@
 # balloon
 
-## Build Setup
+## Run project
 
 ```bash
 # install dependencies
