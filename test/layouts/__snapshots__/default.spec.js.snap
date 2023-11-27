@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Layout default renders correctly 1`] = `
+<div>
+  <navigation-stub />
+   
+  <nuxt-stub />
+   
+  <footercomponent-stub />
+</div>
+`;
