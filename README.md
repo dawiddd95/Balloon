@@ -20,10 +20,9 @@ $ npm run test
 
 # test coverage
 after running tests with $ npm run test
-you can look at coverage in HTML in directory Balloon\coverage
+you can look at coverage in HTML in coverage directory
 
-
-## Special Directories
+**## Special Directories**
 
 You can create the following extra directories, some of which have special behaviors. Only `pages` is required; you can delete them if you don't want to use their functionality.
 
