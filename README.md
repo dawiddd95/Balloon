@@ -2,7 +2,7 @@
 
 ## Run project and test
 
-```
+```bash
 # clone repo in your project directory
 git clone https://github.com/dawiddd95/Balloon.git
 
