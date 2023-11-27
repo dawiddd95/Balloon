@@ -4,11 +4,11 @@
             Explore our latest drops
         </h2>
         <div class="latest-drops__characters">
-            <button 
+            <NuxtLink 
                 v-for="(character, index) in characters" 
                 :key="character.id" 
                 class="latest-drops__character" 
-                @click="() => redirectToProduct(character.id)"
+                :to="`/product/${character.id}`"
             >
                 <img class="latest-drops__character--img" :src="character.image" alt="" />
                 <span class="latest-drops__character--name">{{ character.name }}</span>
@@ -18,7 +18,7 @@
                 <span class="latest-drops__character--price">
                     {{ prices[index] }}
                 </span>
-            </button>
+            </NuxtLink>
         </div>
         <div class="latest-drops__controls">
             <button class="latest-drops__controls--circle">
@@ -46,11 +46,6 @@ export default {
             required: true,
         }
     },
-    methods: {
-        redirectToProduct(id) {
-            this.$router.push(`/product/${id}`);
-        }
-    }
 };
 </script>
   
@@ -103,6 +98,7 @@ export default {
         display: flex;
         flex-direction: column;
         margin-top: 24px;
+        text-decoration: none;
 
         @media screen and (min-width: 1116px) {
             width: 261px;

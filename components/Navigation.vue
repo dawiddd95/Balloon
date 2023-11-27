@@ -1,19 +1,20 @@
 <template>
     <nav class="navigation">
         <div class="navigation__container">
-            <img 
-                class="navigation__logo" 
-                src="~/assets/logo.svg" alt="logo"
-                @click="redirectToHome"
-            >
-            <button class="navigation__cart-button" @click="redirectToCart">
+            <NuxtLink to="/">
+                <img 
+                    class="navigation__logo" 
+                    src="~/assets/logo.svg" alt="logo"
+                >
+            </NuxtLink>
+            <NuxtLink class="navigation__cart-button" to="/cart">
                 <img class="navigation__cart-icon" src="~/assets/cart.svg" alt="cart icon">
                 View Cart
                 <!-- Showing product amount in cart if we are in cart page (according to designs) -->
                 <div v-if="isCartPage" class="navigation__cart-amount">
                     2
                 </div>
-            </button>
+            </NuxtLink>
         </div>
     </nav>
 </template>
@@ -28,14 +29,6 @@ export default {
             return this.$route.path === '/cart'; // Zakładając, że ścieżka do strony koszyka to '/cart'
         }
     },
-    methods: {
-        redirectToCart() {
-            this.$router.push('/cart');
-        },
-        redirectToHome() {
-            this.$router.push('/');
-        }
-    }
 };
 </script>
   
@@ -76,6 +69,7 @@ export default {
         background-color: white;
         border: 1px solid #201B21;
         cursor: pointer;
+        text-decoration: none;
 
         @media screen and (min-width: 1116px) {
             font-size: 14px;

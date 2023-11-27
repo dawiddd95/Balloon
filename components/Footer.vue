@@ -2,7 +2,9 @@
     <footer class="footer">
         <div class="footer__container">
             <div class="footer__social-wrapper">
-                <img class="footer__logo" src="~/assets/logo-white.png" alt="logo">
+                <NuxtLink to="/">
+                    <img class="footer__logo" src="~/assets/logo-white.png" alt="logo">
+                </NuxtLink>
                 <div class="footer__socials">
                     <div class="footer__social-item">
                         <img src="~/assets/Instagram.svg" alt="instagram">
