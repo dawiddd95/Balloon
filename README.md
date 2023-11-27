@@ -1,6 +1,6 @@
 # balloon
 
-## Run project and test
+## Run project and tests
 
 ```bash
 # clone repo in your project directory
