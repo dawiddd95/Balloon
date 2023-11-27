@@ -2,7 +2,7 @@
 
 ## Run project and test
 
-```bash
+
 # clone repo in your project directory
 git clone https://github.com/dawiddd95/Balloon.git
 
@@ -22,7 +22,7 @@ $ npm run test
 after running tests with $ npm run test
 you can look at coverage in HTML in Balloon/coverage/***
 
-```
+
 ## Special Directories
 
 You can create the following extra directories, some of which have special behaviors. Only `pages` is required; you can delete them if you don't want to use their functionality.
