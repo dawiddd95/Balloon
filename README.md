@@ -20,7 +20,7 @@ $ npm run test
 
 # test coverage
 after running tests with $ npm run test
-you can look at coverage in HTML in Balloon/coverage/***
+you can look at coverage in Balloon/coverage/***
 ```
 
 ## Special Directories
