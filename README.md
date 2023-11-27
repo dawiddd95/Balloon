@@ -2,7 +2,7 @@
 
 ## Run project and test
 
-
+```
 # clone repo in your project directory
 git clone https://github.com/dawiddd95/Balloon.git
 
@@ -21,7 +21,7 @@ $ npm run test
 # test coverage
 after running tests with $ npm run test
 you can look at coverage in HTML in Balloon/coverage/***
-
+```
 
 ## Special Directories
 
